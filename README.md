@@ -691,8 +691,8 @@ The implementation covers the main requirements of the BOLT take-home assignment
 | PostgreSQL database | ✅ |
 | Separate frontend/API/database layers | ✅ |
 | SQL schema files | ✅ |
-| Public deployment | ⏳ |
-| GitHub repository | ⏳ |
+| Public deployment | ✅ |
+| GitHub repository | ✅ |
 
 ---
 
