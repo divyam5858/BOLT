@@ -644,87 +644,30 @@ The following functionality has been tested:
 
 # Deployment
 
-The application is designed with separate frontend, API, and database layers.
-
-```text
-Frontend
-React + Vite
-    |
-    v
-Backend
-Node.js + Express
-    |
-    v
-Database
-PostgreSQL + Supabase
-```
+The application is deployed with separate frontend, API, and database layers.
 
 ## Frontend
 
-Deployed using:
+Deployed using Vercel.
 
-```text
-Vercel
-```
-
-Frontend URL:
-
-```text
-<frontend-url>
-```
+Live URL:
+https://bolt-assign-frontend.vercel.app/
 
 ## Backend
 
-Deployed using:
+Deployed using Render.
 
-```text
-<backend-hosting-service>
-```
-
-Backend URL:
-
-```text
-<backend-url>
-```
+API URL:
+https://bolt-backend-t2v1.onrender.com/
 
 ## Database
 
-Hosted using:
+Hosted using Supabase PostgreSQL.
 
-```text
-Supabase PostgreSQL
-```
+The database schema is included in the `Database/` directory as:
 
----
-
-# Security & Configuration
-
-- Database credentials are stored in environment variables.
-- `.env` files are excluded from GitHub.
-- CORS is configured for the frontend.
-- Helmet is used for basic HTTP security headers.
-- Input validation is performed for email and OTP.
-- OTP is restricted to a 6-digit numeric value.
-
----
-
-# LLM Usage
-
-LLMs were used during development for assistance with:
-
-- Project structure
-- Database schema design
-- API implementation
-- React component implementation
-- Debugging
-- UI improvements
-- Testing and troubleshooting
-
-A record of the prompts used during development is available in:
-
-```text
-prompts.md
-```
+- `users.sql`
+- `checkout_orders.sql`
 
 ---
 
