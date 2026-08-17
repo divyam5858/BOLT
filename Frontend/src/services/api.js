@@ -19,7 +19,7 @@ const apiRequest = async (endpoint, options = {}) => {
 };
 
 export const registerUser = (userData) => {
-  return apiRequest("/api/auth/register", {
+  return apiRequest("/auth/register", {
     method: "POST",
     body: JSON.stringify(userData),
   });
@@ -27,12 +27,12 @@ export const registerUser = (userData) => {
 
 export const recognizeUser = (email) => {
   return apiRequest(
-    `/api/auth/recognize?email=${encodeURIComponent(email)}`
+    `/auth/recognize?email=${encodeURIComponent(email)}`
   );
 };
 
 export const verifyOtp = (email, otp) => {
-  return apiRequest("/api/auth/verify-otp", {
+  return apiRequest("/auth/verify-otp", {
     method: "POST",
     body: JSON.stringify({
       email,
@@ -42,7 +42,7 @@ export const verifyOtp = (email, otp) => {
 };
 
 export const submitCheckout = (checkoutData) => {
-  return apiRequest("/api/checkout", {
+  return apiRequest("/checkout", {
     method: "POST",
     body: JSON.stringify(checkoutData),
   });
